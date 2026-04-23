@@ -4,8 +4,23 @@ import { useInView } from './useInView'
 
 const featured = [
   {
+    title: 'ShieldAI — LLM Safety Gateway',
+    description: 'OpenAI-compatible end-to-end safety framework routing all LLM traffic through a multi-stage pipeline with input/output guardrails, PII redaction, and policy enforcement. Fine-tuned a DeBERTa safety classifier on 10K+ samples achieving 94% F1 on jailbreak and prompt injection detection with under 50ms latency overhead. Built an automated red team framework with 30+ adversarial payloads, reducing attack success rate from 35% to under 5%.',
+    tech: ['LLM Safety', 'DeBERTa', 'Guardrails', 'PII Redaction', 'FastAPI', 'Red Teaming'],
+    github: 'https://github.com/YatishSikka/ShieldAI',
+    gradient: 'linear-gradient(135deg, #ef4444 0%, #6366f1 100%)',
+  },
+  {
+    title: 'ComplaintIQ — Agentic Complaint Intelligence',
+    description: 'Multi-agent AI platform with 6 collaborative LangGraph agents that transform raw consumer complaints into structured intelligence — automating intake classification, root cause analysis, compliance risk detection, and resolution planning. Semantic search via ChromaDB and sentence-transformers for cross-complaint pattern detection; automated regulatory risk flagging across 4+ frameworks (Reg Z, UDAAP, FCRA, ECOA).',
+    tech: ['LangGraph', 'Multi-Agent', 'ChromaDB', 'FastAPI', 'React', 'Docker'],
+    github: 'https://github.com/YatishSikka/ComplaintIQ',
+    demo: 'https://yatishsikka-complaintiq.hf.space',
+    gradient: 'linear-gradient(135deg, #f59e0b 0%, #06b6d4 100%)',
+  },
+  {
     title: 'Identity-Preserving Story Visualization',
-    description: 'Developing identity conditioning module for diffusion-based story generation, integrating IP-Adapter\'s decoupled cross-attention into StoryDiffusion to reduce character identity drift. Benchmarking CLIP, DINOv2, and InsightFace encoders on PororoSV (10K+ stories).',
+    description: 'Developing an identity conditioning module for diffusion-based story generation, integrating IP-Adapter\'s decoupled cross-attention into StoryDiffusion to reduce character identity drift. Benchmarking CLIP, DINOv2, and InsightFace encoders on PororoSV (10K+ stories).',
     tech: ['Generative AI', 'PyTorch', 'Diffusion Models', 'Computer Vision'],
     github: 'https://github.com/YatishSikka',
     status: 'In Progress',
@@ -13,16 +28,16 @@ const featured = [
   },
   {
     title: 'Market Monitor System',
-    description: 'Production-grade agentic AI system for financial market intelligence processing news, policy documents, and SEC filings. Achieved 87% decision correctness through data-centric iteration, improving reliability by 45%.',
+    description: 'Production-grade agentic AI system for financial market intelligence processing news, policy documents, and SEC filings. Achieved 87% decision correctness through data-centric iteration, improving reliability by 45% without changing the underlying LLM.',
     tech: ['Agentic AI', 'Vector DB', 'Docker', 'CI/CD', 'AWS'],
-    github: 'https://github.com/YatishSikka',
+    github: 'https://github.com/YatishSikka/agentic-ai-data-project',
     gradient: 'linear-gradient(135deg, #06b6d4 0%, #6366f1 100%)',
   },
   {
     title: 'FinSight — Financial Document Intelligence',
-    description: 'Multimodal AI platform analyzing financial document images (10-K filings, balance sheets) via Gemini 2.5 Flash. Features Q&A, filing comparison, and a financial ratio engine computing 9 metrics with color-coded dashboards.',
+    description: 'Multimodal AI platform analyzing financial document images (10-K filings, balance sheets) via Gemini 2.5 Flash. Features Q&A, filing comparison, and a financial ratio engine computing 9 metrics with color-coded dashboards. Deployed on HuggingFace Spaces.',
     tech: ['Multimodal LLMs', 'FastAPI', 'Streamlit', 'Docker'],
-    github: 'https://github.com/YatishSikka',
+    demo: 'https://yatishsikka-finsight.hf.space',
     gradient: 'linear-gradient(135deg, #22c55e 0%, #06b6d4 100%)',
   },
 ]
@@ -32,31 +47,37 @@ const other = [
     title: 'FloodVision',
     description: 'Deep learning system for all-weather flood detection combining SAR and optical imagery. Achieved 29x performance improvement under adverse conditions with synthetic cloud augmentation.',
     tech: ['Deep Learning', 'CV', 'HPC'],
+    github: 'https://github.com/YatishUMD/FloodVision',
   },
   {
     title: 'EchoQA',
     description: 'Production-grade RAG system using FAISS and LangChain for real-time Q&A from multiple news sources. Reduced hallucinations by 35% through prompt optimization.',
     tech: ['RAG', 'FAISS', 'LangChain'],
+    github: 'https://github.com/YatishSikka/News_research_tool',
   },
   {
     title: 'Federated Learning for AVs',
-    description: 'Containerized FL system with YOLOv9 and Flower framework. Boosted mAP by 6-9% and cut AWS launch time from ~10 min to <1 min.',
+    description: 'Containerized FL system with YOLOv9 and Flower framework. Boosted mAP by 6-9% and cut AWS instance launch time from ~10 min to under 1 min.',
     tech: ['MLOps', 'YOLOv9', 'AWS'],
+    github: 'https://github.com/YatishSikka/Containerized-Federated-Learning-for-Autonomous-Driving-Utilizing-MLOps',
   },
   {
     title: 'StackOverflow Auto-Responder',
     description: 'GPT-4 powered agent using LangChain and SerpAPI to autonomously generate context-aware coding solutions. Improved accuracy by 40%.',
     tech: ['Agentic AI', 'LangChain', 'GPT-4'],
+    github: 'https://github.com/YatishSikka/stackoverflow_agent',
   },
   {
     title: 'Optimized Q&A with Mistral-7B',
     description: 'Full finetuning lifecycle using LoRA/PEFT. Reduced inference latency by 3x and GPU memory by 80% via AutoGPTQ quantization.',
     tech: ['LLMs', 'LoRA', 'Quantization'],
+    github: 'https://github.com/YatishSikka/quantized_llm_qa',
   },
   {
     title: 'SumScribe',
     description: 'End-to-end video summarization using LLaMA 2-7B-32K and Whisper. Transforms videos into text summaries in under 30 seconds.',
     tech: ['LLMs', 'Whisper', 'Haystack'],
+    github: 'https://github.com/YatishSikka/yt_video_summarizer',
   },
 ]
 
@@ -85,7 +106,7 @@ export default function Projects() {
               className="project-featured"
               initial={{ opacity: 0, y: 50 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: 0.1 + i * 0.12 }}
+              transition={{ duration: 0.6, delay: 0.1 + i * 0.1 }}
             >
               <div className="project-featured__accent" style={{ background: p.gradient }} />
               <div className="project-featured__content">
@@ -95,7 +116,14 @@ export default function Projects() {
                     <h3 className="project-featured__title">{p.title}</h3>
                   </div>
                   <div className="project-featured__links">
-                    <a href={p.github} target="_blank" rel="noreferrer"><FiGithub size={18} /></a>
+                    {p.demo && (
+                      <a href={p.demo} target="_blank" rel="noreferrer" aria-label="Live Demo">
+                        <FiExternalLink size={18} />
+                      </a>
+                    )}
+                    <a href={p.github} target="_blank" rel="noreferrer" aria-label="GitHub">
+                      <FiGithub size={18} />
+                    </a>
                   </div>
                 </div>
                 <p className="project-featured__desc">{p.description}</p>
@@ -131,7 +159,7 @@ export default function Projects() {
             >
               <div className="project-card__header">
                 <FiFolder className="project-card__icon" />
-                <a href="https://github.com/YatishSikka" target="_blank" rel="noreferrer" className="project-card__link">
+                <a href={p.github} target="_blank" rel="noreferrer" className="project-card__link" aria-label="GitHub">
                   <FiGithub size={18} />
                 </a>
               </div>
@@ -153,8 +181,6 @@ export default function Projects() {
           max-width: 1200px;
           margin: 0 auto;
         }
-
-        /* Featured */
         .projects__featured {
           display: flex;
           flex-direction: column;
@@ -197,10 +223,16 @@ export default function Projects() {
           font-size: 1.35rem;
           font-weight: 700;
         }
+        .project-featured__links {
+          display: flex;
+          gap: 4px;
+          flex-shrink: 0;
+        }
         .project-featured__links a {
           color: var(--text-muted);
           transition: color 0.2s;
           padding: 6px;
+          border-radius: 6px;
         }
         .project-featured__links a:hover { color: var(--accent-light); }
         .project-featured__desc {
@@ -239,8 +271,6 @@ export default function Projects() {
           padding: 4px 12px;
           border-radius: 100px;
         }
-
-        /* Other */
         .projects__other-title {
           text-align: center;
           font-size: 1.25rem;
@@ -288,9 +318,7 @@ export default function Projects() {
           margin-bottom: 10px;
           transition: color 0.2s;
         }
-        .project-card:hover .project-card__title {
-          color: var(--accent-light);
-        }
+        .project-card:hover .project-card__title { color: var(--accent-light); }
         .project-card__desc {
           color: var(--text-secondary);
           font-size: 0.88rem;
@@ -313,9 +341,7 @@ export default function Projects() {
           margin-left: 8px;
         }
         @media (max-width: 768px) {
-          .projects__grid {
-            grid-template-columns: 1fr;
-          }
+          .projects__grid { grid-template-columns: 1fr; }
           .project-featured__content { padding: 24px; }
         }
       `}</style>
