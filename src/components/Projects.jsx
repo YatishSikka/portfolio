@@ -22,8 +22,7 @@ const featured = [
     title: 'Identity-Preserving Story Visualization',
     description: 'Developing an identity conditioning module for diffusion-based story generation, integrating IP-Adapter\'s decoupled cross-attention into StoryDiffusion to reduce character identity drift. Benchmarking CLIP, DINOv2, and InsightFace encoders on PororoSV (10K+ stories).',
     tech: ['Generative AI', 'PyTorch', 'Diffusion Models', 'Computer Vision'],
-    github: 'https://github.com/YatishSikka',
-    status: 'In Progress',
+    github: 'https://github.com/YatishSikka/MSML612-Project',
     gradient: 'linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)',
   },
   {
