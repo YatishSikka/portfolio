@@ -4,6 +4,13 @@ import { useInView } from './useInView'
 
 const featured = [
   {
+    title: 'Voice-Ops Agent — Voice-Native Automation Assistant',
+    description: 'Voice-controlled Telegram assistant that turns a spoken message into a spoken reply in roughly 2 seconds end-to-end, chaining Groq Whisper, Llama 3.3 70B, and Orpheus TTS. Tools are discovered at runtime rather than hardcoded — any n8n workflow tagged agent-tool is read over the n8n API and exposed as a callable LLM tool, so new capabilities ship as workflows instead of code. Currently manages a Google Calendar, confirming irreversible actions out loud and running slow jobs in the background to report back as a voice note.',
+    tech: ['Voice AI', 'n8n', 'Groq', 'Llama 3.3 70B', 'FastAPI', 'Telegram Bot API'],
+    github: 'https://github.com/YatishSikka/voice-ops-agent',
+    gradient: 'linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%)',
+  },
+  {
     title: 'ShieldAI — LLM Safety Gateway',
     description: 'OpenAI-compatible end-to-end safety framework routing all LLM traffic through a multi-stage pipeline with input/output guardrails, PII redaction, and policy enforcement. Fine-tuned a DeBERTa safety classifier on 10K+ samples achieving 94% F1 on jailbreak and prompt injection detection with under 50ms latency overhead. Built an automated red team framework with 30+ adversarial payloads, reducing attack success rate from 35% to under 5%.',
     tech: ['LLM Safety', 'DeBERTa', 'Guardrails', 'PII Redaction', 'FastAPI', 'Red Teaming'],
